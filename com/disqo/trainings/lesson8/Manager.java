@@ -15,9 +15,9 @@ public class Manager extends Employee{
         super.print();
     }
 
-//
-//    public static void printStatic() {
-//        System.out.println("static manager call");
-//
-//    }
+
+    public static void printStatic() {
+        System.out.println("static manager call");
+
+    }
 }
