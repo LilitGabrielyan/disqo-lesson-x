@@ -93,7 +93,7 @@ public class MyLine {
 
     @Override
     public String toString() {
-        return "com.disqo.trainings.com.disqo.trainings.Lesson1.Lesson1.MyLine{" +
+        return "com.disqo.trainings.Lesson1.MyLine{" +
                 "begin=" + begin +
                 ", end=" + end +
                 '}';
