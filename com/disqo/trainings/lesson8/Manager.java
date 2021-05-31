@@ -12,6 +12,7 @@ public class Manager extends Employee{
     @Override
     public void print() {
         System.out.println("subclass");
+
         super.print();
     }
 
