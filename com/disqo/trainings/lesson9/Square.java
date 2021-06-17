@@ -38,4 +38,15 @@ public class Square extends Rectangle {
         super.setWidth(length);
         super.setLength(length);
     }
+
+
+    @Override
+    public boolean equals(Object otherObject) {
+        if (otherObject instanceof Square) {
+            Square other = (Square) otherObject;
+            return this.getWidth() == other.getWidth() && this.getLength() == other.getLength();
+        } else {
+            return false;
+        }
+    }
 }

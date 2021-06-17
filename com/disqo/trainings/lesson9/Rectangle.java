@@ -1,6 +1,6 @@
 package com.disqo.trainings.lesson9;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Comparable<Rectangle> {
 
     private double width = 1.0;
     private double length = 2.0;
@@ -57,5 +57,23 @@ public class Rectangle extends Shape {
                 ", length=" + length +
                 ", " + super.toString() +
                 '}';
+    }
+
+
+    @Override
+    public boolean equals(Object otherObject) {
+        if (otherObject == null) return false;
+        if (otherObject.getClass() == Rectangle.class) {
+            Rectangle other = (Rectangle) otherObject;
+            return super.equals(other) && this.width == other.width && this.length == other.length;
+        } else {
+            return false;
+        }
+    }
+
+
+    @Override
+    public int compareTo(Rectangle o) {
+        return (int) (this.getArea() - o.getArea());
     }
 }
